@@ -1,9 +1,9 @@
 'use client';
 
 import { Movie } from '@/lib/db';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '././ui/button';
+import { Card, CardContent, CardFooter } from '././ui/card';
+import { Badge } from '././ui/badge';
 import { Star, Pencil, Trash2, Check, Calendar, Film } from 'lucide-react';
 
 interface MovieCardProps {
@@ -55,7 +55,7 @@ export function MovieCard({ movie, onEdit, onDelete, onToggleWatched }: MovieCar
         </div>
 
         {movie.genre && (
-          <Badge variant="secondary" className="font-normal">
+          <Badge variant="info" className="font-normal">
             {movie.genre}
           </Badge>
         )}

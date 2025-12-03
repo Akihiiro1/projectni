@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import { Movie } from '@/lib/db';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
+import { Button } from '././ui/button';
+import { Input } from '././ui/input';
+import { Label } from '././ui/label';
+import { TextArea } from '././ui/textarea';
 import { X } from 'lucide-react';
 
 interface MovieFormProps {
@@ -129,7 +129,7 @@ export function MovieForm({ movie, onSave, onCancel }: MovieFormProps) {
 
           <div className="space-y-2">
             <Label htmlFor="notes">Notes</Label>
-            <Textarea
+            <TextArea
               id="notes"
               value={formData.notes}
               onChange={(e) => setFormData({ ...formData, notes: e.target.value })}

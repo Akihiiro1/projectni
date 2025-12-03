@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react';
 import { Movie } from '@/lib/db';
 import { localStorageDB } from '@/lib/storage';
-import { MovieCard } from '@/components/movie-card';
-import { MovieForm } from '@/components/movie-form';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import { MovieCard } from './components/movie-card';
+import { MovieForm } from './components/movie-form';
+import { Button } from './components/ui/button';
+import { Input } from './components/ui/input';
 import { Plus, Search, Film, Filter } from 'lucide-react';
 import {
   Select,
@@ -14,7 +14,7 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
+} from './components/ui/select';
 
 export default function Home() {
   const [movies, setMovies] = useState<Movie[]>([]);
